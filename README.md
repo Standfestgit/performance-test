@@ -9,7 +9,7 @@ $ time php rand.php // cpu 15.976 total
 
 - PHP 5.6.7 | 10.000.000 iterations
 
- ```
+```
 $ time php rand.php // cpu 1.717 total
 ```
 
