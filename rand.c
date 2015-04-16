@@ -4,7 +4,7 @@
 int main() {
   int c, n;
  
-  printf("Performance test from C...\n");
+  printf("C performance test...\n");
  
   for (c = 1; c <= 100000000; c++) {
     n = rand() % 100 + 1;

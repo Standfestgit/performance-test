@@ -1,5 +1,5 @@
 
-### Very simple performance test in various programming languages - generate random number in 100.000.000 and 10.000.000 iterations.
+#### Very simple performance test in various programming languages - generate random number in 100.000.000 and 10.000.000 iterations.
 
 - PHP 5.6.7 | 100.000.000 iterations
 
@@ -49,25 +49,37 @@ $ time python rand.py // FAILED: 2274 killed     python rand.py
 $ time python rand.py // cpu 1.709 total
 ```
 
-- ruby 1.9.3p | 100.000.000 iterations
+- Ruby 1.9.3p | 100.000.000 iterations
 
 ```
 $ time ruby rand.rb  // cpu 24.005 total
 ```
 
-- ruby 1.9.3p | 10.000.000 iterations
+- Ruby 1.9.3p | 10.000.000 iterations
 
 ```
 $ time ruby rand.rb  // cpu 2.513 total
 ```
 
-- GNU bash, version 4.3.11 | 100.000.000 iterations
+- Perl 5.8.12 | 100.000.000 iterations
+
+```
+$ time perl rand.pl // cpu 13.846 total
+```
+
+- Perl 5.8.12 | 10.000.000 iterations
+
+```
+$ time perl rand.pl // cpu 1.410 total
+```
+
+- Bash, version 4.3.11 | 100.000.000 iterations
 
 ```
 $ time bash rand.sh  // FAILED: cannot allocate 9 bytes (2204471296 bytes allocated)
 ```
 
-- GNU bash, version 4.3.11 | 10.000.000 iterations
+- Bash, version 4.3.11 | 10.000.000 iterations
 
 ```
 $ time bash rand.sh  // FAILED: killed     bash rand.sh
@@ -96,3 +108,4 @@ $ g++ rand.cpp -o rand.cpp.bin && time ./rand.cpp.bin  // cpu 1.021 total
 ```
 $ g++ rand.cpp -o rand.cpp.bin && time ./rand.cpp.bin  // cpu 0.106 total
 ```
+
